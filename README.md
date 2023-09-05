@@ -58,11 +58,13 @@ You can start writing your test scenarios in the src/test/resources/features dir
 Feature: User Login
 
   Scenario: Valid user login
+  
     Given the user is on the login page
     When the user enters valid credentials
     Then the user should be logged in successfully
 
   Scenario: Invalid user login
+  
     Given the user is on the login page
     When the user enters invalid credentials
     Then the user should see an error message
